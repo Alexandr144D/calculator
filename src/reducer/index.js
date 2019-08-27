@@ -6,7 +6,6 @@ export function reducer (state, action) {
     switch (action.type) {
 
         case type.TURN_OFF:
-            console.log('turn me off')
             return {
                 ...state,
                 isWorking: false,

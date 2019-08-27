@@ -34,7 +34,7 @@ export function Key (props) {
                     "operator-key" : ["="].includes(props.value) ?
                         "equal-key" : ["√", "%", "."].includes(props.value) ?
                             "grey-background" : ["C", "Off"].includes(props.value) ?
-                                "system-keys" : null}`
+                                "system-keys" : props.value === 0 ? 'null-key' : null}`
             }
         >
             {props.value}
